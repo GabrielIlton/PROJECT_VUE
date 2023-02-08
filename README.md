@@ -1,4 +1,4 @@
-# asp_net_vue_project
+# VUE Project ASP.net Udemy
 
 ## Project setup
 ```
