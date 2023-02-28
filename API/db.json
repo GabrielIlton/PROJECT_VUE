@@ -1,9 +1,67 @@
 {
-  "students": [
+  "professors": [
     {
       "name": "Gabriel",
-      "surname": "",
       "id": 1
+    },
+    {
+      "name": "João",
+      "id": 2
+    },
+    {
+      "name": "Léo",
+      "id": 3
+    },
+    {
+      "name": "Lucas",
+      "id": 4
+    }
+  ],
+  "students": [
+    {
+      "id": 2,
+      "name": "Isa",
+      "surname": "",
+      "professor": {
+        "name": "João",
+        "id": 2
+      }
+    },
+    {
+      "id": 3,
+      "name": "José",
+      "surname": "Carlos",
+      "professor": {
+        "name": "Léo",
+        "id": 3
+      }
+    },
+    {
+      "id": 5,
+      "name": "Matheus",
+      "surname": "",
+      "professor": {
+        "name": "Gabriel",
+        "id": 1
+      }
+    },
+    {
+      "name": "Pedro",
+      "surname": "",
+      "professor": {
+        "id": 2,
+        "name": "João"
+      },
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "Mané",
+      "surname": "Souza",
+      "professor": {
+        "name": "Lucas",
+        "id": 4
+      }
     }
   ]
 }
