@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <Students/>
+    <Nav></Nav>
+    <div class="marginMain">
+      <router-view :key="$route.fullPath"></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import Students from './components/Student/Students.vue'
+  import Professor from './components/Professor/Professor.vue';
+  import Students from './components/Student/Students.vue';
+  import About from './components/About/About.vue';
+  import Nav from './components/Nav/Nav.vue';
 
-export default {
-  name: 'app',
-  components: {
-    Students
+  export default {
+    name: 'app',
+    components: {
+      Professor,
+      Students,
+      About,
+      Nav,
+    }
   }
-}
 </script>
 
 <style>
 .btnDanger{
+  font-size: 0.8em !important;
   background-color: red;
 }
 .btn{
   padding: 10px 20px;
   cursor: pointer;
   border: 1px solid black;
+  font-size: 1.3em;
   color: #e0edf4;
   font-weight: bold;
   border-radius: 5px;
@@ -57,12 +68,22 @@ table tr td{
   text-align: center;
 }
 table thead{
-  background-color: rgb(102, 175, 217);
+  background-color: rgb(102, 175, 217) !important;
   font-size: 1.2em;
   padding: 10px 0px;
   text-align: center !important;
 }
+.marginMain {
+  width: 50%;
+  margin: auto
+}
+.colSmall {
+  width: 5%;
+  text-align: center;
+  background-color: rgb(125, 217, 245);
+  font-weight: bold;
+}
 #app {
-  
+  width: 100%;
 }
 </style>
